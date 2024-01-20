@@ -1,0 +1,267 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+justify-content: center;
+background-color: black;
+overflow: hidden;
+}
+
+.container{
+    font-size: 10px ;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
+
+.sun{
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+}
+.earth,.moon{
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+
+.earth{
+    top: 5em;
+    left: 5em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 36.5s linear infinite;
+}
+
+.moon{
+    top: 0;
+    right: 0;
+    width: 8em;
+    height: 8em;
+    animation: orbit 3s linear infinite;
+}
+
+.earth::before,.moon::before{
+    content:'';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.earth::before{
+    top: 2.8em;
+    right: 2.8em;
+    width: 3em;
+    height: 3em;
+    background-color: aqua;
+}
+
+.moon::before{
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: silver;
+}
+
+@keyframes orbit {
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+</style>
+<body>
+    <div class="container">
+        <div class="sun"></div>
+        <div class="earth">
+            <div class="moon"></div>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 120vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .container {
+            font-size: 18px;
+            width: 40em;
+            height: 40em;
+            position: relative;
+        }
+
+       
+        .brahmand {
+            position: absolute;
+    top: 2em;
+    left: 3em;
+    width: 39em;
+    height: 30em;
+    background-color: rgb(8, 0, 255);
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+        }
+        .brahmand h1{
+            margin-top: 170px;
+    font-size: 3em;
+    margin-left: 256px;
+        }
+        .brahmand h2{
+            font-size: 2em;
+    margin-left: 278px;
+        }
+        .brahmand h3{
+            font-size: 3em;
+    margin-left: 324px;
+        }
+
+        .Sun,
+        .Earth {
+            position: absolute;
+            border-style: solid;
+            border-color: white transparent transparent transparent;
+            border-width: 0.1em 0.1em 0 0;
+            border-radius: 50%;
+        }
+
+    
+        .Earth ,.moon{
+            position: absolute;
+            border-style: solid;
+            border-color: rgb(255, 255, 255) transparent transparent transparent;
+            border-width: 0.1em 0.1em 0 0;
+            border-radius: 50%;
+        }
+
+        .Sun {
+            top: 5.5em;
+    left: 11em;
+    width: 23em;
+    height: 23em;
+    animation: orbit 24.5s linear infinite;
+
+        }
+
+        .Earth {
+            top: 0;
+            right: 0;
+            width: 8em;
+            height: 8em;
+            animation: orbit 24.7s linear infinite;
+        }
+        .moon {
+            top: -3px;
+    width: 3em;
+    height: 3em;
+    animation: orbit 9.7s linear infinite;
+    left: 104px;
+}
+        
+
+        .Sun::before,
+        .Earth::before 
+        {
+            content: ' ';
+            position: absolute;
+            border-radius: 50%;
+        }
+        
+        .Earth::before ,
+        .moon::before
+        {
+            content: ' ';
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .Sun::before {
+            top: 2em;
+    right: 2em;
+    width: 4em;
+    height: 4em;
+    background-color: rgb(236, 236, 57);
+    box-shadow: 0 0 3em white;
+
+
+        }
+
+        .Earth::before {
+            top: 0.8em;
+            right: 0.2em;
+            width: 1.2em;
+            height: 1.2em;
+            background-color: aqua;
+            /* background-image: url(earth1.avif); */
+        }
+        .moon::before {
+            top: 0.2em;
+            right: 0.1em;
+            width: 0.6em;
+            height: 0.6em;
+            background-color:rgb(239, 242, 242);
+        }
+
+        @keyframes orbit {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="brahmand">
+            <h1>ब्रह्माण्ड</h1>
+            <h2>🪐   🌙   🌎</h2>
+            <h3></h3>
+        </div>
+        <div id="contain">
+            <div class="Sun">
+                <h1>🌎</h1>
+            <h2>🪐 </h2>
+                <div class="Earth">
+                    <div class="moon"></div>
+                </div>
+            <h1>🌘</h1>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
